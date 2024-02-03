@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0px;
+    }
+    #contact {
+      width: 800px;
+      height: 800px;
+      /* background-image: linear-gradient(to right, #434343 0%, black 100%); */
+
+      margin: auto;
+    }
+    #map {
+      height: 300px;
+      width: 800px;
+      
+    }
+    #details {
+      height: 500px;
+      width: 800px;
+    }
+    #address {
+      height: 500px;
+      width: 250px;
+      background-color:lightseagreen;
+      float: left;
+    }
+    #form {
+      height: 480px;
+      width: 330px;
+      background-color:lightseagreen;
+      float: right;
+      margin: auto;
+      padding: 10px;
+      
+    }
+    input[type="text"]
+    {
+        height: 30px;
+        width: 200px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+  </style>
+  <body>
+    <div id="contact">
+      <div id="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.5620644623164!2d77.22693477528829!3d28.61291197567556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2daa9eb4d0b%3A0x717971125923e5d!2sIndia%20Gate!5e0!3m2!1sen!2sin!4v1706592551619!5m2!1sen!2sin"
+          width="800"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div id="details">
+        <div id="address"></div>
+        <div id="form">
+          <form>
+            <label>Name</label><br />
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              required
+            /><br />
+
+            <label>Email</label><br />
+            <input
+              type="text"
+              name="email"
+              placeholder="email"
+              required
+            /><br />
+
+            <label>Contact No</label><br />
+            <input
+              type="text"
+              name="efr"
+              placeholder="phone no"
+              required
+            /><br />
+
+            <label>Message</label><br />
+            <textarea name="msg" rows="10" cols="30" required></textarea><br />
+
+            <input type="submit" onclick="SubmitEvent" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

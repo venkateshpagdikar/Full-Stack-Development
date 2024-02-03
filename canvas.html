@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    canvas {
+      border: 2px solid red;
+    }
+  </style>
+  <body>
+    <p>Default Canvas</p>
+    <canvas></canvas>
+    <p>Rect Canvas</p>
+    <canvas id="rect" width="200" height="200"></canvas>
+    <script>
+      a = document.getElementById("rect");
+      b = a.getContext("2d");
+      b.fillStyle = "red";
+      b.fillRect(50, 50, 100, 100);
+
+      b = a.getContext("2d");
+      b.fillStyle = "green";
+      b.fillRect(75, 75, 100, 100);
+
+      b = a.getContext("2d");
+      b.globalAlpha = 0.5;
+      b.fillStyle = "blue";
+      b.fillRect(25, 25, 100, 100);
+    </script>
+    <p>Circle Canvas</p>
+    <canvas id="cricle" width="200" height="200"></canvas>
+    <script>
+      c = document.getElementById("cricle");
+      a = c.getContext("2d");
+
+      // First circle (red)
+      a.beginPath();
+      a.arc(100, 100, 30, 0, Math.PI * 2);
+      a.fillStyle = "red";
+      a.fill();
+
+      // Second circle (green)
+      a.beginPath();
+      a.arc(50, 50, 30, 0, Math.PI * 2);
+      a.fillStyle = "green";
+      a.fill();
+
+      // Third circle (blue)
+      a.beginPath();
+      a.arc(150, 150, 30, 0, Math.PI * 2);
+      a.fillStyle = "blue";
+      a.fill();
+    </script>
+    <p>Line Canvas</p>
+    <canvas id="line" width="200" height="200"></canvas>
+    <script>
+    a=document.getElementbyId("line");
+    b=a.getContext("2d")
+    b.moveTo(0,0);
+    b.lineTo(200,200);
+    b.stroke();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0px;
+      }
+
+      .fixed {
+        width: 50px;
+        height: 200px;
+        position: fixed;
+        border: 2px solid red;
+
+        left: 0px;
+        top: 50%;
+        margin-top: -100px;
+      }
+      .absolute {
+        width: 50px;
+        height: 200px;
+        position: absolute;
+        border: 2px solid rgb(0, 0, 0);
+        right: 0px;
+        top: 50%;
+        margin-top: -100px;
+      }
+
+      #relative {
+        width: 700px;
+        height: 450px;
+        border: 2px solid red;
+        margin: auto;
+        position: relative;
+      }
+      #relative img {
+        width: 700px;
+        height: 450px;
+        border: 2px solid red;
+        margin: auto;
+        position: relative;
+      }
+      #prev {
+        width: 50px;
+        height: 50px;
+        border: 2px solid black;
+        background-color: aqua;
+        position: absolute;
+        left: 50px;
+        top: 50%;
+        margin-top: -25px;
+      }
+      #next {
+        width: 50px;
+        height: 50px;
+        border: 2px solid black;
+        background-color: aqua;
+        position: absolute;
+        right: 50px;
+        top: 50%;
+        margin-top: -25px;
+      }
+    </style>
+    <div id="relative">
+        <img src="/img/netflix.gif" alt="">
+      <div id="prev"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" id="arrow"><g fill="#134563"><path d="M32 55.9C18.8 55.9 8.1 45.2 8.1 32S18.8 8.1 32 8.1 55.9 18.8 55.9 32 45.2 55.9 32 55.9zm0-45.2c-11.7 0-21.3 9.6-21.3 21.3S20.3 53.3 32 53.3 53.3 43.7 53.3 32 43.7 10.7 32 10.7z"></path><path d="M32.5 45.7 18.8 32l13.7-13.7 1.8 1.9L22.6 32l11.7 11.8-1.8 1.9"></path><path d="M20.7 30.6h24v2.8h-24z"></path></g></svg></div>
+      <div id="next"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 64 64" viewBox="0 0 64 64" id="arrow"><g transform="translate(28 328)"><path fill="#134563" d="M4-272.1c-13.2 0-23.9-10.7-23.9-23.9S-9.2-319.9 4-319.9s23.9 10.7 23.9 23.9S17.2-272.1 4-272.1zm0-45.2c-11.7 0-21.3 9.6-21.3 21.3s9.6 21.3 21.3 21.3 21.3-9.6 21.3-21.3-9.6-21.3-21.3-21.3z"></path><path fill="#134563" d="m3.5-282.3-1.8-1.9L13.4-296 1.7-307.8l1.8-1.9L17.2-296 3.5-282.3"></path><path fill="#134563" d="M15.3-294.6h-24v-2.8h24z"></path></g></svg></div>
+    </div>
+    <div class="fixed">
+      <a href="https://www.fb.com" target="_blank"
+        ><img src="img/youtube.png"
+      /></a>
+      <a href="https://www.fb.com" target="_blank"
+        ><img src="img/github.png"
+      /></a>
+      <a href="https://www.fb.com" target="_blank"
+        ><img src="img/netflix.png"
+      /></a>
+      <a href="https://www.fb.com" target="_blank"
+        ><img src="img/icons8-discord-50.png"
+      /></a>
+    </div>
+    <div class="absolute">
+      <a href="https://www.fb.com" target="_blank"
+        ><img src="img/youtube.png"
+      /></a>
+      <a href="https://www.fb.com" target="_blank"
+        ><img src="img/github.png"
+      /></a>
+      <a href="https://www.fb.com" target="_blank"
+        ><img src="img/netflix.png"
+      /></a>
+      <a href="https://www.fb.com" target="_blank"
+        ><img src="img/icons8-discord-50.png"
+      /></a>
+    </div>
+  </body>
+</html>
